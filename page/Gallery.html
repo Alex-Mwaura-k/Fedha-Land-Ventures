@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google xml -->
+
+    <!-- Site Descriptions -->
+    <meta name="description" content="Get a view of what we do and our extensive propery options to select from..">
+    <meta name="keywords" content="land for sale, real estate properties, premium land, investment properties, residential properties, commercial properties, fedhalandventures.co.ke, fedhaland, fedha, fedhalandventures.com, fedhaltd, fedhalandventures">
+    <title>Fedha Land Gallery</title>
+    <!-- links -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <!-- Testimonials  -->
+    <!-- *******  Owl Carousel Links  ******* -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <!-- stylesheets- js  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+  <div class="preloader">
+    <img src="/img/preloader.gif" alt="Loading...">
+  </div>
+    <header>
+       <!-- navigationlinks at top :0 -->
+  <nav>
+    <div class="contacts">
+      <a href="Tel: +254715113103">+254-715-113-103<i class="fas fa-phone"></a></i>
+      <a href="mailto:fedhalandventures@gmail.com">info@fedhalandventures<i class="fas fa-envelope"></a></i>
+      <a href="https://www.google.com/maps/place/Fedha+Land+Ventures/@-1.1471466,36.9584616,19z/data=!4m6!3m5!1s0x182f474b80c7eeff:0xcc6b79a45ed5fc75!8m2!3d-1.1470355!4d36.959198!16s%2Fg%2F11stj96z1b?entry=ttu" target="_blank">Address<i class="fas fa-map-marker-alt"></a></i>
+    </div>
+    <div class="medialinks">
+      <a href="https://www.instagram.com/fedhalandventures/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/fedha-land-ventures-755b39286" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/fedhalandventures" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </nav>
+  <!-- navigation links bellow top :0 -->
+  <nav class="navdetail dark-mode-target">
+    <div class="logo"><a href="/index.html"><img src="/img/logo.png" alt="logo"></a></div>
+    <div class="navigationlinks">
+      <ul class="navlinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/page/Property menu.html">Properties</a></li>
+        <li><a href="/page/About us.html">About Us</a></li>
+        <li><a href="/page/contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle">Media<i class="fas fa-caret-down"></i></a>
+          <!-- Dropdown content on navigation-->
+          <div class="dropdown-content">
+            <a href="/page/Gallery.html">Gallery</a>
+            <a href="/page/Blog.html">Blog</a>
+            <a href="/page/faqs.html">FAQs</a>
+          </div>
+        </li>
+        <div class="conli">
+          <i class="fas fa-phone"></i><a href="Tel: +254715113103" style="font-weight: bold;">0798384040</a>
+          <i class="fas fa-envelope"></i><a href="mailto:fedhalandventures@gmail.com">@fedhalandventures</a>
+        </div>
+      </ul>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const dropdownToggle = document.querySelector(".dropdown-toggle");
+        const dropdownContent = document.querySelector(".dropdown-content");
+
+        dropdownToggle.addEventListener("click", function (event) {
+        event.preventDefault();
+        dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        });
+        });          
+      </script>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <script>
+      //burger script
+      document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navlinks');
+        const navlinks = document.querySelectorAll('.navlinks li');
+      
+        burger.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+          navlinks.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = '';
+            } else {
+              link.style.animation = `navlinkFade 0.5s ease ${index / 7 + 0.3}s forwards`;
+            }
+          });
+          burger.classList.toggle('toggles');
+        });
+      });
+    </script>
+  <div class="toggle-container">
+    <input type="checkbox" id="mode-toggle" class="toggle-checkbox">
+    <label for="mode-toggle" class="toggle-label">
+      <span class="sun-icon">☀️</span>
+      <span class="moon-icon">🌙</span>
+      <div class="toggle-handle"></div>
+    </label>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const modeToggle = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    modeToggle.addEventListener("change", function() {
+        if (modeToggle.checked) {
+            body.classList.add("black-mode");
+            document.querySelectorAll('.dark-mode-target').forEach(function(div) {
+                div.classList.add("black-mode");
+            });
+        } else {
+            body.classList.remove("black-mode");
+            document.querySelectorAll('.dark-mode-target').forEach(function(div) {
+                div.classList.remove("black-mode");
+            });
+          }
+      });
+    });
+  </script>
+  </nav>
+</header>
+<!-- empty div scrolls back to the top  -->
+<div id="home"></div>
+<!-- WhatsApp button float  -->
+<div class="whatsapp-btn">
+  <a href="https://wa.me/+254715113103" target="_blank"><img src="/img/icons/Whatsapp.png" alt="WhatsApp button"></a>
+  <span class="whatsapp-text">WhatsApp Us Now!!</span>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const whatsappBtn = document.querySelector(".whatsapp-btn");
+    const whatsappText = document.querySelector(".whatsapp-text");
+
+    whatsappBtn.addEventListener("mouseenter", function() {
+    whatsappText.style.opacity = "1";
+    whatsappText.style.transform = "translateX(0)";
+    setTimeout(function() {
+    whatsappText.style.opacity = "0";
+    whatsappText.style.transform = "translateX(-20px)";
+    }, 2000);
+    });
+    });
+  </script>
+</div>
+<!-- Scroll back to top btn  -->
+<div class="scroll-button" id="scrollButton">
+  <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+<script>
+  // scroll button show and hide on scrolling
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("home");
+  var sticky = header.offsetTop;
+  function myFunction() {
+  if (window.pageYOffset > sticky) {
+    document.getElementById("scrollButton").style.display = "block";
+    } else {
+    document.getElementById("scrollButton").style.display = "none";
+    }
+  }
+</script>
+<!-- Media section  -->
+<div class="thegallery">
+
+  <ul class="controls animate2">
+      <li class="buttons active" data-filter="all">All</li>
+      <li class="buttons" data-filter="Fadhili-Garden">Fadhili Garden</li>
+      <li class="buttons" data-filter="our-team">Our Team</li>
+      <li class="buttons" data-filter="property-owners">Clients</li>
+      <li class="buttons" data-filter="images">Images</li>
+      <li class="buttons" data-filter="posters">Posters</li>
+  </ul>
+
+  <div class="image-container animate">
+
+      <a href="/img/property/1.webp" class="image Fadhili-Garden" target="_blank">
+          <img src="/img/property/1.webp" alt="image">
+      </a>
+      <a href="/img/property/2.webp" class="image Fadhili-Garden">
+          <img src="/img/property/2.webp" alt="image">
+      </a>
+      <a href="/img/pages/fadhili-gardens/2.jpg" class="image Fadhili-Garden">
+          <img src="/img/property/3.webp" alt="image">
+      </a>
+      <a href="/img/pages/fadhili-gardens/3.jpg" class="image Fadhili-Garden">
+          <img src="/img/property/4.webp" alt="image">
+      </a>
+      <a href="/img/pages/fadhili-gardens/4.jpg" class="image Fadhili-Garden">
+          <img src="/img/property/5.webp" alt="image">
+      </a>
+      <a href="/img/pages/fadhili-gardens/5.jpg" class="image Fadhili-Garden">
+          <img src="/img/pages/fadhili-gardens/5.jpg" alt="image">
+      </a>
+      <a href="/img/pages/fadhili-gardens/6.jpg" class="image Fadhili-Garden">
+          <img src="/img/pages/fadhili-gardens/6.jpg" alt="image">
+      </a>
+
+      <a href="/img/hero_page/Teammembers/profile2.jpg" class="image our-team">
+          <img src="/img/hero_page/Teammembers/profile2.jpg" alt="image">
+      </a>
+
+      <a href="/img/hero_page/Testimonials/1.jpeg" class="image property-owners">
+          <img src="/img/hero_page/Testimonials/1.jpeg" alt="image">
+      </a>
+      <a href="/img/hero_page/Testimonials/2.jpeg" class="image property-owners">
+          <img src="/img/hero_page/Testimonials/2.jpeg" alt="image">
+      </a>
+      <a href="/img/hero_page/Testimonials/3.jpeg" class="image property-owners">
+          <img src="/img/hero_page/Testimonials/3.jpeg" alt="image">
+      </a>
+      <a href="/img/hero_page/Testimonials/4.jpeg" class="image property-owners">
+          <img src="/img/hero_page/Testimonials/4.jpeg" alt="image">
+      </a>
+      <a href="/img/hero_page/Testimonials/5.jpeg" class="image property-owners">
+          <img src="/img/hero_page/Testimonials/5.jpeg" alt="image">
+      </a>
+      <a href="/img/hero_page/Testimonials/6.jpeg" class="image property-owners">
+          <img src="/img/hero_page/Testimonials/6.jpeg" alt="image">
+      </a>
+
+
+      <a href="/img/hero_page/carosel/1.jpg" class="image images">
+          <img src="/img/hero_page/carosel/1.jpg" alt="image">
+      </a>
+      <a href="/img/hero_page/carosel/2.jpg" class="image images">
+          <img src="/img/hero_page/carosel/2.jpg" alt="image">
+      </a>
+      <a href="/img/hero_page/carosel/3.jpg" class="image images">
+          <img src="/img/hero_page/carosel/3.jpg" alt="image">
+      </a>
+      <a href="/img/hero_page/carosel/4.jpg" class="image images">
+          <img src="/img/hero_page/carosel/4.jpg" alt="image">
+      </a>
+      <a href="/img/hero_page/carosel/5.jpg" class="image images">
+          <img src="/img/hero_page/carosel/5.jpg" alt="image">
+      </a>
+
+
+      <a href="/img/pages/posters/1.jpg" class="image posters">
+          <img src="/img/pages/posters/1.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/2.jpg" class="image posters">
+          <img src="/img/pages/posters/2.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/3.jpg" class="image posters">
+          <img src="/img/pages/posters/3.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/4.jpg" class="image posters">
+          <img src="/img/pages/posters/4.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/5.jpg" class="image posters">
+          <img src="/img/pages/posters/5.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/6.jpg" class="image posters">
+          <img src="/img/pages/posters/6.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/7.jpg" class="image posters">
+          <img src="/img/pages/posters/7.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/8.jpg" class="image posters">
+          <img src="/img/pages/posters/8.jpg" alt="image">
+      </a>
+      <a href="/img/pages/posters/9.jpg" class="image posters">
+          <img src="/img/pages/posters/9.jpg" alt="image">
+      </a>
+
+
+  </div>
+
+</div>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+  $('.buttons').click(function(){
+
+      $(this).addClass('active').siblings().removeClass('active');
+
+      var filter = $(this).attr('data-filter')
+
+      if(filter == 'all'){
+          $('.image').show(400);
+      }else{
+          $('.image').not('.'+filter).hide(200);
+          $('.image').filter('.'+filter).show(400);
+      }
+
+  });
+
+  $('.thegallery').magnificPopup({
+
+      delegate:'a',
+      type:'image',
+      thegallery:{
+          enabled:true
+      }
+
+  });
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- footer section  -->
+<footer>
+	<div class="foot">
+	  <div class="top">
+		<div class="logo-details">
+		  <span class="logo_name">Fedha Land Ventures</span>
+		</div>
+		<div class="media-icons">
+		  <a href="https://web.facebook.com/%F0%9D%90%85%F0%9D%90%9E%F0%9D%90%9D%F0%9D%90%A1%F0%9D%90%9A-%F0%9D%90%8B%F0%9D%90%9A%F0%9D%90%A7%F0%9D%90%9D-%F0%9D%90%95%F0%9D%90%9E%F0%9D%90%A7%F0%9D%90%AD%F0%9D%90%AE%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%AC-114931514922653" target="_blank"><i class="fab fa-facebook-f"></i></a>
+		  <a href="https://twitter.com/search?q=fedha%20land%20ventures&src=typed_query" target="_blank"><i class="fab fa-twitter"></i></a>
+		  <a href="https://www.instagram.com/fedhalandventures/" target="_blank"><i class="fab fa-instagram"></i></a>
+		  <a href="https://wa.me/+254715113103" target="_blank"><i class="fab fa-whatsapp"></i></a>
+		  <a href="https://www.tiktok.com/@fedhalandventures" target="_blank"><i class="fab fa-tiktok"></i></a>
+		  <a href="https://www.youtube.com/results?search_query=fedha+land+ventures" target="_blank"><i class="fab fa-youtube"></i></a>
+		</div>
+	  </div>
+	  <div class="link-boxes">
+		<ul class="box">
+		  <li class="link_name">Quick links</li>
+		  <li><a href="/index.html">Home</a></li>
+		  <li><a href="/page/Property menu.html">properties</a></li>
+		  <li><a href="/page/About us.html">About us</a></li>
+		</ul>
+		<ul class="box">
+		  <li class="link_name">Info</li>
+		  <li><a href="https://www.google.com/maps/place/Fedha+Land+Ventures/@-1.1471466,36.9584616,19z/data=!4m6!3m5!1s0x182f474b80c7eeff:0xcc6b79a45ed5fc75!8m2!3d-1.1470355!4d36.959198!16s%2Fg%2F11stj96z1b?entry=ttu">Location <br>
+		  Nyongo house 1st floor-Ruiru<br>
+		  
+		  </a></li>
+		  <li><a href="tel:+254715113103">Helpline</a></li>
+		</ul>
+		<ul class="box">
+		  <li class="link_name">plots for sale</li>
+		  <li><a href="/page/Property menu.html">50 x 100 Deals</a></li>
+		  <li><a href="/page/Ufanisi haven.html">100 x 100 Deals</a></li>
+		</ul>
+		<ul class="box">
+		  <li class="link_name">Projects</li>
+		  <li><a href="https://www.google.com/maps/place/Fadhili+Garden+Makutano+-+Phase+1/@-0.7923017,37.3003964,986m/data=!3m1!1e3!4m14!1m7!3m6!1s0x18261d690ca12527:0x41f8de466ba6c3d0!2sFadhili+Garden+Makutano+-+Phase+1!8m2!3d-0.791683!4d37.302753!16s%2Fg%2F11v0373b__!3m5!1s0x18261d690ca12527:0x41f8de466ba6c3d0!8m2!3d-0.791683!4d37.302753!16s%2Fg%2F11v0373b__?entry=ttu">Fadhili Garden Makutano</a></li>
+      <li><a href="/page/Ufanisi haven.html">Ufanisi Haven Kitengela</a></li>
+		  <li><a href="/page/Amani garden.html">Amani Garden Malindi</a></li>
+		</ul>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+		<ul class="box input-box">
+		  <li class="link_name">Subscribe</li>
+		  <li><input type="email" placeholder="Enter your email" name="email" required></li>
+		  <li><input id="subscribeBtn" type="button" value="Subscribe"></li>
+		</ul>
+		
+		<script>
+		  document.getElementById("subscribeBtn").addEventListener("click", function(event) {
+			event.preventDefault(); // Prevent default button action
+		
+			// Get input value
+			var emailInput = document.querySelector("input[name='email']").value;
+		
+			// Perform validation
+			if (emailInput) {
+			  Swal.fire({
+				icon: "success",
+				title: "Success!",
+				text: "Successfully subscribed.",
+			  }).then(function() {
+				// Update the form action URL
+				document.querySelector("ul.input-box").action = "https://formsubmit.co/a1f0b21350b51d5cfc0dd19cf094b19e";
+		
+				// Submit the form after the user dismisses the pop-up
+				document.querySelector("ul.input-box").submit();
+			  });
+			} else {
+			  Swal.fire({
+				icon: "error",
+				title: "Oops!",
+				text: "Please enter your email address.",
+			  });
+			}
+		  });
+		</script>
+			   
+	  </div>
+	</div>
+	<div class="bottom-details">
+	  <div class="bottom_text">
+		<span class="copyright_text">Copyright &#169; 2024 - All rights reserved</span>
+		<span class="policy_terms">
+		  <a href="#" class="terms-condition">Terms & condition</a>
+      <a href="https://lexcy.netlify.app" target="_blank">Developed by @lexcy.__</a>
+		</span>
+	  </div>
+	</div>
+</footer>
+
+<!-- Animations -->
+<script defer>
+    const observer = new IntersectionObserver((entries) =>{
+      entries.forEach((entry) =>{
+        console.log(entry)
+        if (entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+        else
+        {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.animate, .animate2');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    window.addEventListener('load', function () {
+      const preloader = document.querySelector('.preloader');
+      setTimeout(function () {
+        preloader.style.opacity = '0';
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500); // Adjust the delay as needed
+      }, 1000); // Adjust the delay as needed
+      }); 
+</script>
+</body>
+</html>
