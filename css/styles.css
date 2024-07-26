@@ -8,7 +8,6 @@
   -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
   outline: none !important;
   -webkit-touch-callout: none;
-  background-color: aqua;
 }
 :root {
   --card-clr: #33353b;
