@@ -889,10 +889,18 @@ section .articles {
   white-space: nowrap;
   width: 1px;
 }
+@media (max-width: 1199px) {
+  .resize-2025 {
+    margin: unset;
+  }
+}
 @media (max-width: 1080px) {
   /* .article-body p{
     display: none;
   } */
+  .myslide.fade {
+    height: unset;
+  }
 }
 @media (max-width: 768px) {
   .myslide.fade {
